@@ -10,7 +10,7 @@
 
 import Foundation
 
-protocol ViewToPresenter___VARIABLE_productName:identifier___Protocol: class {
+protocol ViewToPresenter___VARIABLE_productName:identifier___Protocol: AnyObject {
     
     var view: PresenterToView___VARIABLE_productName:identifier___Protocol? {get set}
     var interactor: PresenterToInteractor___VARIABLE_productName:identifier___Protocol? {get set}
@@ -18,18 +18,18 @@ protocol ViewToPresenter___VARIABLE_productName:identifier___Protocol: class {
 
 }
 
-protocol PresenterToView___VARIABLE_productName:identifier___Protocol: class {
+protocol PresenterToView___VARIABLE_productName:identifier___Protocol: AnyObject {
 
 }
 
-protocol PresenterToRouter___VARIABLE_productName:identifier___Protocol: class {
+protocol PresenterToRouter___VARIABLE_productName:identifier___Protocol: AnyObject {
     static func createModule() -> ___VARIABLE_productName:identifier___ViewController
 }
 
-protocol PresenterToInteractor___VARIABLE_productName:identifier___Protocol: class {
+protocol PresenterToInteractor___VARIABLE_productName:identifier___Protocol: AnyObject {
     var presenter: InteractorToPresenter___VARIABLE_productName:identifier___Protocol? {get set}
 }
 
-protocol InteractorToPresenter___VARIABLE_productName:identifier___Protocol: class {
+protocol InteractorToPresenter___VARIABLE_productName:identifier___Protocol: AnyObject {
 
 }
